@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import ProPictureApp from './component/ProPictureApp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//https://www.springboottutorial.com/spring-boot-react-full-stack-crud-maven-application
+
+class App extends Component {
+    render() { //whenever Component is extends, should have a render()
+        return (
+            <div className = "container">
+                <ProPictureApp />
+            </div>
+        );
+    }
 }
 
 export default App;
