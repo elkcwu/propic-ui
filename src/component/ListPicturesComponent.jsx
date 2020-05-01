@@ -49,7 +49,7 @@ class ListPicturesComponent extends Component{
                                     <td>{picture.picturename}</td>
                                     <td>{picture.picturelink}</td>
                                     <td>{picture.takendate}</td>
-                                    <td>{picture.user_id}</td>
+                                    <td>{picture.user.id}</td>
                                     <td>{picture.mylike}</td>
                                 </tr>
                                )
